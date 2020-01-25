@@ -9,5 +9,6 @@ public class GroupCrudApplication {
     public static void main(String[] args) {
         SpringApplication.run(GroupCrudApplication.class, args);
     }
+    //cokolwiek
 
 }
