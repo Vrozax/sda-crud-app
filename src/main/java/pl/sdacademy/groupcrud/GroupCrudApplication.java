@@ -12,12 +12,9 @@ public class GroupCrudApplication {
         //to jest komentarz
     }
 
-//    p@GetMapping("/getbyID" / {id})
-//    public Collection<Person> getbyID(@PathVariable int identyfikacja) {
-//        return ContactRepository.getbyID(id);
-    // select * from contacts where id = {identyfikacja}
+
     }
-}
+
 
 
 
