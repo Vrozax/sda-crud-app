@@ -1,1 +1,1 @@
-Simple REST API for retrieving contacts from a person.class
+Simple REST API for retrieving, updating and deleting contacts from a person.class
