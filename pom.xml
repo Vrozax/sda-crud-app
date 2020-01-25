@@ -14,6 +14,9 @@
     <name>group-crud</name>
     <description>Group creation of Spring CRUD app</description>
 
+
+
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -45,9 +48,15 @@
             </exclusions>
         </dependency>
     </dependencies>
-
+    <packaging>war</packaging>
     <build>
+
+
         <plugins>
+            <plugin>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.26.v20200117</version></plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
