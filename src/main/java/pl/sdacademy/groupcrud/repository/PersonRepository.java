@@ -6,6 +6,6 @@ import pl.sdacademy.groupcrud.entity.Person;
 
 
 @Repository
-    public interface PersonRepository extends CrudRepository<Person, Integer> {
-
+public interface PersonRepository extends CrudRepository<Person, Integer> {
+Person findPersonById(int id);
 }
