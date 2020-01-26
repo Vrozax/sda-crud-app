@@ -23,7 +23,7 @@ public class PersonController {
         personRepository.findAll().forEach(personList::add);
         return personList;
     }
-
+//metoda post
     @PostMapping
     public Person add(@RequestBody Person person) {
       return personRepository.save(person);
