@@ -3,17 +3,17 @@ package pl.sdacademy.groupcrud.deleteFunction;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "contact")
+@Table(name = "person")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "firstname")
+    @Column(name = "first_name")
     private String firstName;
-    @Column(name = "lastname")
+    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "phonenumber")
+    @Column(name = "phone_number")
     private int phoneNumber;
 
     public Person(int id, String firstName, String lastName, int phoneNumber) {
@@ -40,6 +40,7 @@ public class Person {
                 ", phoneNumber=" + phoneNumber +
                 '}';
     }
+
 
     @Override
     public boolean equals(Object o) {
