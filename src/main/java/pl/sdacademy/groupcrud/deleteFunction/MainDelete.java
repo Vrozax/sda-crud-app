@@ -10,6 +10,4 @@ public class MainDelete {
         SpringApplication.run(MainDelete.class, args);
 
     }
-
-
 }
