@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.sdacademy.groupcrud.entity.Person;
 import pl.sdacademy.groupcrud.repository.PersonRepository;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class PersonController {
     PersonRepository personRepository;
 
     @GetMapping
-    public List<Person> getContacts(){
+    public List<Person> getContacts() {
 
         List<Person> personList = new ArrayList<>();
         personRepository.findAll().forEach(personList::add);
@@ -24,9 +25,11 @@ public class PersonController {
     }
 
     @PostMapping
-    public Person post(@RequestBody Person person) {
-        return personRepository.save(person);
+    public Person add(@RequestBody Person person) {
+      return personRepository.save(person);
+
     }
 }
+
 
 

@@ -8,4 +8,5 @@ import pl.sdacademy.groupcrud.entity.Person;
 @Repository
     public interface PersonRepository extends CrudRepository<Person, Integer> {
 
+
 }

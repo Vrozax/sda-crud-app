@@ -16,7 +16,7 @@ public class Person {
     @Column(name = "phone_number")
     private int phoneNumber;
 
-    public Person(int id, String firstName, String lastName, int phoneNumber) {
+    public Person(Integer id, String firstName, String lastName, int phoneNumber) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -36,11 +36,11 @@ public class Person {
                 '}';
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public Person setId(int id) {
+    public Person setId(Integer id) {
         this.id = id;
         return this;
     }

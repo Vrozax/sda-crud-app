@@ -20,12 +20,10 @@
 --
 
 LOCK TABLES `person` WRITE;
-/*!40000 ALTER TABLE `person` DISABLE KEYS */;
--- INSERT INTO `person` VALUES (1,'Jan','Kowalski',800800800),(2,'Andrzej','Sapkowski',700072070),(3,'Czesław','Niemen',123098123),(4,'David','Olney',666999666);
-Insert into person( `id`, `first_name`, `last_name`, `phone_number`) values ( 1, "Jan", "Kowalski", 800800800);
-Insert into person( `id`, `first_name`, `last_name`, `phone_number`) values ( 2, "Andrzej", "Sapkowski", 070007207);
-Insert into person( `id`, `first_name`, `last_name`, `phone_number`) values ( 3, "Czesław", "Niemen", 123098123);
-Insert into person( `id`, `first_name`, `last_name`, `phone_number`) values ( 4, "David", "Olney", 666999666);
+Insert into person(`first_name`, `last_name`, `phone_number`) values ( "Jan", "Kowalski", 800800800);
+Insert into person(`first_name`, `last_name`, `phone_number`) values ( "Andrzej", "Sapkowski", 070007207);
+Insert into person(`first_name`, `last_name`, `phone_number`) values ("Czesław", "Niemen", 123098123);
+Insert into person(`first_name`, `last_name`, `phone_number`) values ("David", "Olney", 666999666);
 /*!40000 ALTER TABLE `person` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
