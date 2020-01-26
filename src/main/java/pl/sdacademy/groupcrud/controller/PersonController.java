@@ -1,9 +1,7 @@
 package pl.sdacademy.groupcrud.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.sdacademy.groupcrud.entity.Person;
 import pl.sdacademy.groupcrud.repository.PersonRepository;
 
@@ -25,4 +23,10 @@ public class PersonController {
         return personList;
     }
 
+    @PostMapping
+    public Person post(@RequestBody Person person) {
+        return personRepository.save(person);
+    }
 }
+
+
